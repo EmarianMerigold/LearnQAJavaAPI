@@ -7,7 +7,7 @@ public class HelloWorldTest {
     @Test
     public void testHelloWorld(){
         Response response = RestAssured
-                .get("https://playground.lernqa.ru/hello")
+                .get("https://playground.learnqa.ru/api/hello")
                 .andReturn();
         response.prettyPrint();
     }
