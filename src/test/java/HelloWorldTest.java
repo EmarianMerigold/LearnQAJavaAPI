@@ -26,9 +26,9 @@ public class HelloWorldTest {
 
         response.prettyPrint();
 
-        //Headers responseHeaders = (Headers) response.getHeaders(); // Получение всех заголовков
+        //Headers responseHeaders = (Headers) response.getHeaders(); // Получение всех заголовков от сервера
         //System.out.println(responseHeaders);
-        String locationHeader = response.getHeader("Location"); // Получение конкретного заголовка
+        String locationHeader = response.getHeader("Location"); // Получение конкретного заголовка от сервера
         System.out.println(locationHeader);
 
     }
