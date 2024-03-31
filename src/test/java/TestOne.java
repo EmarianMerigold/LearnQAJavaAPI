@@ -19,7 +19,7 @@ public class TestOne {
     }
 
     @Test
-    public void testRestFor404() {
+    public void testTestFor404() {
         Response response = RestAssured
                 .get("https://playground.learnqa.ru/api/map2")
                 .andReturn();
