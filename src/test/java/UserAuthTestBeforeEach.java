@@ -49,7 +49,6 @@ public class UserAuthTestBeforeEach {
 
         int userIdOnCheck = responseCheckAuth.getInt("user_id");
         assertTrue(userIdOnCheck > 0, "Unexpected user id " + userIdOnCheck);
-
         assertEquals(userIdOnAuth, userIdOnCheck, "User id from auth request is not equal to user_id from check request"
         );
     }
