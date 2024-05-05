@@ -1,10 +1,11 @@
-package lib;
+package tests;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import lib.BaseTestCase;
 import lib.Assertions;
+import lib.DataGenerator;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
