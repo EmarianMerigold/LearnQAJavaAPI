@@ -21,6 +21,8 @@ import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import lib.ApiCoreRequests;
 
+//Команда для запуска Allure в командной строке: allure serve allure-results
+
 @Epic("Authorisation cases")
 @Feature("Authorisation")
 public class UserAuthTestWithTegsForAllure extends BaseTestCase {
