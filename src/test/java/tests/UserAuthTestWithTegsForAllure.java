@@ -30,7 +30,7 @@ public class UserAuthTestWithTegsForAllure extends BaseTestCase {
     String cookie;
     String header;
     int userIdOnAuth;
-    private final  ApiCoreRequests apiCoreRequests = new ApiCoreRequests();
+    private final ApiCoreRequests apiCoreRequests = new ApiCoreRequests();
 
     @BeforeEach
     public void  loginUser(){
