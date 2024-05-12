@@ -12,7 +12,7 @@ import java.util.Map;
 public class UserGetTest extends BaseTestCase {
 
     @Test
-    public  void testGetUserDataNonAuth(){
+    public void testGetUserDataNonAuth(){
         Response responseUserData = RestAssured
                 .get("https://playground.learnqa.ru/api/user/2")
                 .andReturn();
