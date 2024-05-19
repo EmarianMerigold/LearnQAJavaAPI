@@ -25,7 +25,7 @@ public class Assertions {
         assertEquals(
                 expectedAnswer,
                 Response.asString(),
-                "Response text is nit as expected"
+                "Response text is not as expected"
         );
 
     }
