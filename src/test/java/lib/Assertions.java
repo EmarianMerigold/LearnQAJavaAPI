@@ -54,4 +54,8 @@ public class Assertions {
         }
     }
 
+    public static void assertHeaderLocation(String header, String expectedValue){
+        assertEquals(expectedValue, header, "Redirect URL does not match the expected URL");
+    }
+
 }

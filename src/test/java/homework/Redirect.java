@@ -3,7 +3,10 @@ package homework;
 import io.restassured.RestAssured;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
+import lib.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Redirect {
 
@@ -29,6 +32,10 @@ public class Redirect {
         String location = response.getHeader("Location");
         System.out.println("URL for redirect: " + location);
 
+        // Проверка корректности URL перенаправления
+        String expectedRedirectUrl = "https://playground.learnqa.ru/"; // Ожидаемый URL
+        //assertEquals(expectedRedirectUrl, location, "Redirect URL does not match the expected URL");
+        Assertions.assertHeaderLocation(location, expectedRedirectUrl);
 
     }
 

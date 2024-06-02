@@ -2,6 +2,7 @@ package lib;
 
 import io.qameta.allure.Step;
 import io.qameta.allure.restassured.AllureRestAssured;
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.http.Header;
 
@@ -46,4 +47,16 @@ public class ApiCoreRequests {
                 .post(url)
                 .andReturn();
     }
+
+    @Step ("Make a GET-request with redirects")
+    public Response makeGetRequestWithRedirect(String url){
+        return given()
+                .filter(new AllureRestAssured())
+                .redirects()
+                .follow(false)
+                .when()
+                .get(url)
+                .andReturn();
+    }
+
 }
